@@ -1,2 +1,2 @@
 ## Color Flipper
-[Color Flipper](https://app.netlify.com/sites/yogitacolorflipper)
+[Color Flipper](https://yogitacolorflipper.netlify.app/)
