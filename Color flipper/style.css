@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: #f1f5f8;
+}
+nav{
+    display: grid;
+    align-items: center;
+    background-color: white;
+    padding: 7px 0px;
+    box-shadow: 0px 0px 10px 1px rgb(173, 173, 173) ;
+}
+.nav-center{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px auto;
+}
+.nav-center h4{
+    color:#04a2d6;
+    padding: 5px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    letter-spacing: 5px;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links li{
+    list-style: none;
+    padding: 7px 10px;
+}
+.nav-links li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    color: black;
+    letter-spacing: 2px;
+}
+.nav-links li a:hover{
+    color: #04a2d6;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+.container{
+    background-color: black;
+    color: #fff;
+    padding:  10px 25px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+.container h1{
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: 'Roboto';
+}
+.container h1 span{
+    color:#0080ff;
+    letter-spacing: 3px;
+}
+.btn{
+    background-color: transparent;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px .2px rgb(206, 205, 205);
+    
+}
+.btn:hover{
+    background-color: black;
+    color: #fff;
+    transition: 0.7s linear;
+    
+}
+
+@media screen and (max-width:630px) {
+    .nav-center{
+        justify-content: space-between;
+    }
+}
