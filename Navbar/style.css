@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-color: hsl(210, 36%, 96%);
+    
+}
+nav{
+    
+    background-color:#fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.nav-center{
+    max-width: 1170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 1rem;
+    
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#logo-img{
+    height: 40px;
+    display: block;
+}
+.nav-toggle{
+    display: none;
+    font-size: 1.5rem;
+    color:#49a6e9 ;
+    background-color: transparent; 
+    border-color: transparent;
+    cursor: pointer;
+    transition:all 0.3s linear ;
+    
+
+}
+
+
+.fas{
+    font-weight: 900;
+    font-style: normal;
+    animation-name: sample;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+ul{
+    list-style: none;
+} 
+.links{
+    display: flex;
+    height: auto;
+    
+    
+}
+.links a{
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    display: block;
+    padding: 0px;
+    margin: 0 0.5rem;
+    color: hsl(209, 34%, 30%);
+    transition:all 0.3s  linear;
+}
+.social-icons{
+    display: flex;
+   list-style: none;
+}
+.social-icons a{
+    margin: 0 0.5rem;
+    color:#49a6e9 ;
+    transition: all 0.3s linear;
+}
+.fab{
+    display: inline-block;
+    line-height: 1;
+}
+.fab:hover{
+    color: hsl(205, 90%, 76%);
+}
+
+@media screen and (max-width:800px) {
+    .social-icons{
+        display: none;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-toggle:hover{
+        color: black;
+    }
+    .nav-header{
+    width: 1170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .links{
+        display: block;
+        height: 0;
+        position: absolute;      
+        top: 11.5%;
+        left: 0%;
+        overflow: hidden;
+        transition: all 0.3s linear;
+    }
+    .show-links{
+        height: 11rem;
+        width: 100%;
+        background-color: #fff;
+        transition: all 0.3s linear;
+    }
+    .links a{
+        margin-bottom: 1rem;
+        padding: 4px;
+        text-align: left;
+        transition: all 0.3s linear;
+        
+    }
+
+    .links a:hover{
+        background-color: hsl(205, 90%, 88%);
+        color: #49a6e9;
+        transition: all 0.3s linear;
+    }
+    
+}
