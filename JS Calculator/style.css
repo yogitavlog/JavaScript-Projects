@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 0.875rem;
+    font-family: 'Righteous', cursive;
+}
+::-webkit-input-placeholder{
+    color: #fff !important;
+    opacity: 0.9;
+}
+.main{
+    height: 100vh;
+    background: #7AE5F5;
+    position: relative;
+}
+.center{
+    height: 62vh;
+    width: 50vw;
+    background-color:#3d5c5c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px 0px rgb(156, 155, 155);
+}
+.center-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main-heading{
+    height: 40vh;
+    width:50vw;
+    position: relative;
+}
+.title{
+    color: #7AE5F5;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    font-size: 1.2rem;
+    font-family: 'Righteous', cursive;
+    text-align: left;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: font-size 2s linear;
+    animation: bounce 2s infinite alternate 2s ease;
+}
+@keyframes bounce {
+    0%{
+       font-size: 1.2rem; 
+    }
+    100%{
+        font-size: 1.3rem;
+    }
+}
+.title::before{
+    content: "";
+    position: absolute;
+    height: 120px;
+    border-left: 1px solid #7AE5F5;
+    color:#7AE5F5;
+    top: -1%;
+    left:-12%;
+
+}
+
+.sreen-body-item{
+    height: 40vh;
+    width: 50vw;
+    position: relative;
+}
+.app-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+}
+.app-form-group{
+    margin-top: 2rem;
+    
+}
+.app-form-control{
+    width: 100%;
+    box-shadow: none;
+    text-align: left;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid #556e72;
+    padding:0.25rem 1.5rem 0.25rem 0rem;
+    background: transparent;
+    color:#fff;
+    font-size: 0.9rem;
+    font-family: 'Righteous', cursive;
+}
+.app-form-control:hover{
+    border-bottom: 0.5px solid #fff;
+    opacity: 1;
+}
+.app-form-button{
+    border: none;
+    width: 100%;
+    margin-top: 2rem;
+    background: transparent;
+    color: #7AE5F5;
+    letter-spacing: 0.12rem;
+    text-transform:uppercase;
+    font-size: 0.95rem;
+    font-family:'Righteous', cursive ;
+}
+.app-form-button:hover{
+    opacity: .6;
+}
+.showdata{
+    width: 100%;
+    position: absolute;
+    top: 83%;
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+    word-spacing: 0.15rem;
+    font-family:'Righteous', cursive ;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width:900px) {
+    .center-div{
+        display: block;
+    }
+    .center{
+        height: 80vh;
+    }
+    .main-heading{
+        margin-top: 10px;
+        height: 10vh;
+    }
+    .title{
+        top: 20%;
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+        transition: font-size 2s linear;
+        animation: dip 2s infinite alternate 2s ease;
+    }
+    @keyframes dip {
+        0%{
+           font-size: 1rem; 
+        }
+        100%{
+            font-size: 1.2rem;
+        }
+    }
+
+    .title::before{
+        display: none;
+    }
+    .title::after{
+        content: "";
+        position: absolute;
+        width: 20rem;
+        border-bottom: 1px solid #7AE5F5;
+        color:#7AE5F5;
+        top: 97%;
+        left:12.5%;
+    }
+    .showdata{
+        padding: 0px 5px 0px 5px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .title::after{
+        width: 18rem;
+    }
+}
+@media screen and (max-width:700px) {
+    .center{
+        width: 60vw;
+    }
+    .main-heading{
+        margin-top: 20px;
+        margin-left: 24px;
+    }
+    .title{
+        font-size: 0.875rem;
+        transition: font-size 2s linear;
+        animation: bounce 2s infinite alternate 2s ease;
+    }
+    @keyframes bounce {
+        0%{
+           font-size: 0.875rem; 
+        }
+        100%{
+            font-size: 1rem;
+        }
+    }
+    .title::after{
+        width: 18rem;
+        left: 4%;
+    }
+}
+@media screen and (max-width:600px) {
+    .center{
+        width: 70vw;
+    }
+    .main-heading{
+        margin-left: 50px;
+    }
+    .title{
+        font-size: 0.675rem;
+        transition: font-size 2s linear;
+        animation: bounce 2s infinite alternate 2s ease;
+    }
+    @keyframes bounce {
+        0%{
+           font-size: 0.675rem; 
+        }
+        100%{
+            font-size: 0.775rem;
+        }
+    }
+    .title::after{
+        width: 15rem;
+        left: 1%;
+    }
+    .sreen-body-item{
+        margin-left: 50px;
+    }
+}
