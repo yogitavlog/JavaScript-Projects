@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    display: block;
+    font-size:0.875rem;
+    line-height: 1.5;
+    background: hsl(210, 36%, 96%);
+    color: hsl(209, 61%, 16%);
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    display: block;
+}
+.title{
+    display: block;
+    margin-top: 15vh;
+    margin-bottom: 4rem;
+}
+.title h2{
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+    color:#c59d5f ;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+}
+.section-center{
+    display: block;
+    width: 90vw;
+    max-width: 620px;
+    margin: 0 auto;
+    background: rgb(248, 245, 245);
+
+}
+.question{
+    display: block;
+    background: #fff;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.1) ;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+.question-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+}
+.question-title p{
+    margin-bottom: 0;
+    font-size: 1rem;
+    letter-spacing:0.25rem;
+    color: hsl(209, 61%, 16%);
+}
+.question-btn{
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    color: #c59d5f;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.question-btn:hover{
+    transform: rotate(90deg);
+}
+button{
+    appearance: auto;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    border-width: 2px;
+    border-style: outset;
+}
+.far{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 400;
+}
+.question-text{
+    padding: 0.5rem 0 0.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.question-text p{
+    display: block;
+    color: hsl(210, 22%, 49%);
+    font-size: 1rem;
+    margin-bottom: 0px;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/*hide text*/
+.question-text{
+    display: none;
+}
+.show-text .question-text{
+    display: block;
+}
+.minus-icon{
+    display: none;
+}
+.show-text .minus-icon{
+    display: inline;
+}
+.show-text .plus-icon{
+    display: none;
+}
